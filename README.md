@@ -1,43 +1,54 @@
 # simple-http-server-rust
 
-## Rustup
+I wanted to be able to teach others how a HTTP server works under the hood. I wanted to learn a new language and decided to use Rust to facilitate building this guide.
 
-The Rust toolchain installer. This feels like `pyenv`
+I used the following resources
 
-## Cargo
+* <https://doc.rust-lang.org/book/ch20-01-single-threaded.html>
+* <https://www.youtube.com/watch?v=7GBlCinu9yg>
+
+## Rust Basics
+
+### Tools
+
+#### Rustup
+
+The Rust toolchain installer. You can use `rustup` to manage different versions of rust.
+
+If you are familiar with python, `rustup` feels equivalent to `pyenv`.
+
+#### Cargo
 
 > Cargo is Rust's build system and package manager.
 
 <https://doc.rust-lang.org/book/ch01-03-hello-cargo.html>
 
-## Commands
+### Commands
 
 <https://www.rust-lang.org/learn/get-starte>
 
-### Compile
+#### Compile
 
 ```sh
-rustc main.rs
+rustc src/main.rs
 ```
 
-### Build
+This will generate an executable file called main. You can run the file via `./main`.
+
+#### Build
 
 ```sh
 cargo build
 ```
 
-> This command creats an executable file in target/debug/[whatever].
+> This command creates an executable file in target/debug/[whatever].
 
 <https://doc.rust-lang.org/book/ch01-03-hello-cargo.html>
 
-### Run
+#### Run
+
+Compile the code AND run the resulting executable all in one command
 
 ```sh
 cargo run
 ```
-
-Compile the code AND run the resulting executable all in one command
-
-## Rust Documentation for Web Server
-
-<https://doc.rust-lang.org/book/ch20-01-single-threaded.html>
