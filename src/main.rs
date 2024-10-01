@@ -9,7 +9,7 @@ fn main() {
     // Each item yielded by this iterator is a Result<TcpStream, io::Error>, where TcpStream represents
     // a connection and io::Error represents a potential error.
     //
-    // .flatten() transform the iterator of Result<TcpStream, io::Error> into an iterator of TcpStream, igorning any errors
+    // .flatten() transform the iterator of Result<TcpStream, io::Error> into an iterator of TcpStream, ignoring any errors
     for mut stream in listener.incoming().flatten() {
         let mut rdr = std::io::BufReader::new(&mut stream);
 
